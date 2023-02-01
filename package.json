@@ -2,6 +2,7 @@
   "name": "nmail",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3500",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,10 +11,17 @@
   },
   "dependencies": {
     "@next/font": "13.1.5",
+    "axios": "^1.2.5",
+    "date-fns": "^2.29.3",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
+    "jet-fetch": "^1.0.9",
+    "moment": "^2.29.4",
     "next": "13.1.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.6",
+    "styled-normalize": "^8.0.7",
+    "uuid": "^9.0.0"
   }
 }
