@@ -8,14 +8,16 @@ import {
   Navlink,
   SideNav,
   SocialConatiner,
-} from "./Navbar.style";
+} from "./Navbar2.styles";
 import checkLoginFunc from "@/middleware/checkLogin";
 
-const Navbar = () => {
+const Navbar2 = () => {
   const [isLoggedIn, setIsLoggedIn] = useState({ status: false });
+
   const handleLogout = () => {
     localStorage.setItem("nmail", JSON.stringify({}));
-    location.assign("/login");
+
+    location.assign("/");
   };
 
   useEffect(() => {
@@ -36,30 +38,7 @@ const Navbar = () => {
         </Link>
       </Logo>
 
-      <Navlink>
-        <ul className="flx">
-          <li>
-            <Link href="/">
-              <h5 className="bold-txt">Home</h5>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              <h5 className="bold-txt">About</h5>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              <h5 className="bold-txt">Contact</h5>
-            </Link>
-          </li>
-          <li>
-            <Link href="/dashboard" className="btn">
-              Dashboard
-            </Link>
-          </li>
-        </ul>
-      </Navlink>
+      <Navlink></Navlink>
       <SideNav className="flx">
         <SocialConatiner>
           <li>
@@ -94,4 +73,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;

@@ -2,7 +2,7 @@
   "name": "nmail",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3500",
+  "proxy": "http://localhost:3500/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

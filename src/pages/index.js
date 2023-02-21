@@ -12,11 +12,21 @@ import {
   Section3,
 } from "@/components/style/Main.style";
 import Footer from "@/components/partials/Footer";
+import checkLoginFunc from "@/middleware/checkLogin";
+import { useEffect } from "react";
+import { add, addDays } from "date-fns";
+
 // import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  useEffect(() => {
+    if (checkLoginFunc()) {
+      location.assign("/dashboard");
+    }
+  }, []);
+
   return (
     <>
       <Head>
