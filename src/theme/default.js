@@ -4,7 +4,7 @@ export default {
     baseColor2: "#fff",
     themeColor: "#31353b",
     themeColor2: "#eeeeee",
-    primaryColor: "#1a7cb4",
+    primaryColor: "#00337C",
     darktheme: "#15181b",
     secondaryColor: "#cecece",
   },

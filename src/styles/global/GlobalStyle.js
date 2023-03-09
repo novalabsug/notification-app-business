@@ -231,7 +231,7 @@ const GlobalStyles = createGlobalStyle`
     .btn {
         padding: 0.5rem 1.2rem;
         background: none;
-        border: 2px solid ${({ theme }) => theme.colors.primaryColor};
+        border: 1.8px solid ${({ theme }) => theme.colors.primaryColor};
         color: ${({ theme }) => theme.colors.baseColor2};
         border-radius: 0.3rem;
         cursor: pointer;
