@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import Navbar from "@/components/partials/Navbar";
 import Header from "@/components/Header/Header";
 import {
+  Box,
   ContactCard,
   ContactForm,
   Input,
@@ -59,20 +60,34 @@ export default function Home() {
             </p>
           </Section2>
           <Section3 className="grd grd-cl-2">
-            <ContactCard>
+            <Box>
               <h3 className="f-size-xlrg">Get in touch</h3>
-              <ul>
-                <li>
-                  <i className="fa-solid fa-phone"></i>
-                  <p className="f-size-reg">256 7762 62517</p>
-                  <p className="f-size-reg">256 7267 82773</p>
-                </li>
-                <li>
-                  <i className="fa-solid fa-envelope"></i>
-                  <p className="f-size-reg">contact@nmail.com</p>
-                </li>
-              </ul>
-            </ContactCard>
+              <ContactCard>
+                <div className="flx">
+                  <Box className="p-1">
+                    <div className="p-0-1">
+                      <i className="fa-solid fa-phone f-size-lrg"></i>
+                    </div>
+                  </Box>
+                  <Box>
+                    <p className="f-size-reg">256 7762 62517</p>
+                    <p className="f-size-reg">256 7267 82773</p>
+                  </Box>
+                </div>
+              </ContactCard>
+              <ContactCard>
+                <div className="flx">
+                  <Box className="p-1">
+                    <div className="p-0-1">
+                      <i className="fa-solid fa-envelope f-size-lrg"></i>
+                    </div>
+                  </Box>
+                  <Box>
+                    <p className="f-size-reg">contact@nmail.com</p>
+                  </Box>
+                </div>
+              </ContactCard>
+            </Box>
             <ContactForm>
               <Input>
                 <label htmlFor="email">Email</label>

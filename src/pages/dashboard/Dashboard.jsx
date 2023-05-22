@@ -102,7 +102,7 @@ const Dashboard = () => {
       <Header>
         <a className="flx">
           <p className="f-size-lrg light-txt">Welcome,</p>
-          <h3 className="f-size-lrg bold-txt primary-color t-up">
+          <h3 className="f-size-lrg bold-txt primary-color ">
             {profile.clientName}
           </h3>
         </a>
@@ -131,7 +131,7 @@ const Dashboard = () => {
                 data-target="dashboard"
                 className="flx active"
               >
-                <h3 className="f-size-reg">Dashboard</h3>
+                <h3 className="">Dashboard</h3>
               </li>
               <li
                 onClick={handleTabSwitch}
@@ -139,7 +139,7 @@ const Dashboard = () => {
                 data-target="account"
                 className="flx"
               >
-                <h3 className="f-size-reg">Account</h3>
+                <h3 className="">Account</h3>
               </li>
               <li
                 onClick={handleTabSwitch}
@@ -147,7 +147,7 @@ const Dashboard = () => {
                 data-target="apikeys"
                 className="flx"
               >
-                <h3 className="f-size-reg">Api Keys</h3>
+                <h3 className="">Api Keys</h3>
               </li>
               <li
                 onClick={handleTabSwitch}
@@ -155,7 +155,7 @@ const Dashboard = () => {
                 data-target="users"
                 className="flx"
               >
-                <h3 className="f-size-reg">Users</h3>
+                <h3 className="">Users</h3>
               </li>
               <li
                 onClick={handleTabSwitch}
@@ -163,13 +163,13 @@ const Dashboard = () => {
                 data-target="settings"
                 className="flx"
               >
-                <h3 className="f-size-reg">Settings</h3>
+                <h3 className="">Settings</h3>
               </li>
             </Navlink>
           </SideNav>
           <Content>
             <div className="p-1">
-              <h3 className="t-up f-size-lrg primary-color">
+              <h3 className="t-up f-size-med primary-color">
                 {currentTab.activeTab == "dashboard"
                   ? "Dashboard"
                   : currentTab.activeTab == "account"

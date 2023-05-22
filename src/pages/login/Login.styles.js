@@ -1,3 +1,4 @@
+import { Themecolors } from "@/theme/constants";
 import styled from "styled-components";
 
 export const Form = styled.form`
@@ -8,6 +9,10 @@ export const Form = styled.form`
 
 export const Input = styled.div`
   padding: 0.5rem 0;
+  input {
+    border: none;
+    background: ${Themecolors.darktheme};
+  }
 `;
 
 export const Error = styled.p`

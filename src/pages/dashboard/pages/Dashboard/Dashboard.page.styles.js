@@ -1,3 +1,4 @@
+import { Themecolors } from "@/theme/constants";
 import styled from "styled-components";
 
 export const Card = styled.div`
@@ -5,5 +6,5 @@ export const Card = styled.div`
   align-items: center;
   align-content: center;
   border-radius: 0.5rem;
-  border: 1.5px solid ${({ theme }) => theme.colors.baseColor2};
+  background: ${Themecolors.darktheme};
 `;

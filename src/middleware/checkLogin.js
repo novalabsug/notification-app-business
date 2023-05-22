@@ -3,6 +3,8 @@ import { isEqual, isAfter, isBefore } from "date-fns";
 const checkLoginFunc = () => {
   const Profile = JSON.parse(localStorage.getItem("nmail"));
 
+  if (!Profile) return false;
+
   if (Profile.token) {
     if (isAfter(new Date(Profile.expiresOn), new Date())) {
       return true;

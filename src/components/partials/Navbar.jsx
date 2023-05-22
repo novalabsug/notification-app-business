@@ -10,6 +10,7 @@ import {
   SocialConatiner,
 } from "./Navbar.style";
 import checkLoginFunc from "@/middleware/checkLogin";
+import { Button2 } from "../style/Main.style";
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState({ status: false });
@@ -54,8 +55,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/dashboard" className="btn">
-              Dashboard
+            <Link href="/dashboard">
+              <h5 className="bold-txt">Dashboard</h5>
             </Link>
           </li>
         </ul>
@@ -80,12 +81,10 @@ const Navbar = () => {
         </SocialConatiner>
         <BtnWrapper>
           {isLoggedIn.status ? (
-            <a onClick={handleLogout} className="btn">
-              Logout
-            </a>
+            <Button2 onClick={handleLogout}>Logout</Button2>
           ) : (
-            <Link href="/login" className="btn">
-              Login
+            <Link href="/login">
+              <Button2>Login</Button2>
             </Link>
           )}
         </BtnWrapper>

@@ -1,13 +1,18 @@
+import { Themecolors } from "@/theme/constants";
 import styled from "styled-components";
 
 export const Form = styled.form`
   padding: 1rem;
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
 `;
 
 export const Input = styled.div`
   padding: 0.5rem 0;
+  input {
+    border: none;
+    background: ${Themecolors.darktheme};
+  }
 `;
 
 export const Error = styled.p`

@@ -36,7 +36,6 @@ const Footer = () => {
       <p className="f-size-med center-align p-1 light-txt">
         &copy; Copyright{" "}
         <span className="f-size-med primary-color">{currentYear()}</span> nmail.
-        Allrights reserved.
       </p>
     </footer>
   );

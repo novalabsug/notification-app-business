@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainNavbar = styled.nav`
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   display: flex;
   flex-direction: space-between;
 `;
@@ -12,7 +12,7 @@ export const Logo = styled.a`
 `;
 
 export const Navlink = styled.div`
-  padding: 0.5rem 3rem;
+  padding: 1rem 3rem;
   width: 40%;
   ul {
     li {
@@ -27,7 +27,7 @@ export const SideNav = styled.div`
 `;
 
 export const SocialConatiner = styled.ul`
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   li {
     margin: 0 0.5rem;

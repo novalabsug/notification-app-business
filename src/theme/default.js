@@ -1,3 +1,5 @@
+import { Themecolors } from "./constants";
+
 export default {
   colors: {
     baseColor: "#000",

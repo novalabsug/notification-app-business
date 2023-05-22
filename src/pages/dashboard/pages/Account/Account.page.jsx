@@ -32,35 +32,35 @@ const Account = () => {
     <>
       <div className="grd grd-cl-4">
         <Grid>
-          <h3 className="f-size-reg">Company Name</h3>
+          <h3 className="">Company Name</h3>
           <p className="f-size-med light-txt">
             {ProfileData.name == "" ? "_______" : ProfileData.name}
           </p>
         </Grid>
         <Grid>
-          <h3 className="f-size-reg">Company Username</h3>
+          <h3 className="">Company Username</h3>
           <p className="f-size-med light-txt">
             {ProfileData.username == "" ? "_______" : ProfileData.username}
           </p>
         </Grid>
         <Grid>
-          <h3 className="f-size-reg">Company Phone Number</h3>
+          <h3 className="">Company Phone Number</h3>
           <p className="f-size-med light-txt">
             {ProfileData.phone == "" ? "_______" : ProfileData.phone}
           </p>
         </Grid>
         <Grid>
-          <h3 className="f-size-reg">Country</h3>
+          <h3 className="">Country</h3>
           <p className="f-size-med light-txt">
             {ProfileData.country == "" ? "_______" : ProfileData.country}
           </p>
         </Grid>
         <Grid>
-          <h3 className="f-size-reg">Company Bio</h3>
+          <h3 className="">Company Bio</h3>
           <p className="f-size-med light-txt">_______</p>
         </Grid>
         <Grid>
-          <h3 className="f-size-reg">Account Type</h3>
+          <h3 className="">Account Type</h3>
           <p className="f-size-med light-txt">_______</p>
         </Grid>
       </div>

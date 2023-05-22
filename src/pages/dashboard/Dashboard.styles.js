@@ -1,3 +1,4 @@
+import { Themecolors } from "@/theme/constants";
 import styled from "styled-components";
 
 export const Header = styled.div`
@@ -40,10 +41,10 @@ export const Navlink = styled.ul`
     border-radius: 0.5rem;
     cursor: pointer;
     &:hover {
-      border: 1.5px solid ${({ theme }) => theme.colors.baseColor2};
+      background: ${Themecolors.darktheme};
     }
     &.active {
-      border: 1.5px solid ${({ theme }) => theme.colors.baseColor2};
+      background: ${Themecolors.darktheme};
     }
   }
 `;

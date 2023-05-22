@@ -1,3 +1,4 @@
+import { Themecolors } from "@/theme/constants";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -12,25 +13,20 @@ const GlobalStyles = createGlobalStyle`
     }
 
     @font-face {
-        font-family: catamaran-medium;
-        src: url(/fonts/Catamaran/static/Catamaran-Medium.ttf);
+        font-family: axiforma-semibold;
+        src: url(/fonts/Axiforma/Kastelov-Axiforma-SemiBold.otf);
     }
 
     @font-face {
-        font-family: catamaran-bold;
-        src: url(/fonts/Catamaran/static/Catamaran-Bold.ttf);
-    }
-
-    @font-face {
-        font-family: catamaran-black;
-        src: url(/fonts/Catamaran/static/Catamaran-Black.ttf);
+        font-family: axiforma-bold;
+        src: url(/fonts/Axiforma/Kastelov-Axiforma-Bold.otf);
     }
 
     * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        font-size: 1rem;
+        font-size: 1.05rem;
         font-family: catamaran;
         color: ${({ theme }) => theme.colors.baseColor2};
         transition: all 0.4s ease-out;
@@ -38,6 +34,14 @@ const GlobalStyles = createGlobalStyle`
 
     .p-1 {
         padding: 1rem 0;
+    }
+
+    .p-0-1 {
+        padding: 0 1rem;
+    }
+
+    .p-2-0-0-0 {
+        padding: 2rem 0 0 0;
     }
 
     .p_5 {
@@ -71,11 +75,11 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .bold-txt {
-        font-family: catamaran-bold;
+        font-family: axiforma-bold;
     }
 
     .bold-txt-2 {
-        font-family: catamaran-black;
+        font-family: axiforma-semibold;
     }
 
     .light-txt {
@@ -88,6 +92,10 @@ const GlobalStyles = createGlobalStyle`
 
     .secondary-color {
         color: ${({ theme }) => theme.colors.secondaryColor};
+    }
+
+    .dark-color {
+        color: ${Themecolors.baseColor}
     }
 
     i {
@@ -199,8 +207,8 @@ const GlobalStyles = createGlobalStyle`
         a,
         span,
         p,
-        li {
-        font-family: catamaran-bold;
+        li, i {
+        font-family: axiforma-bold;
         &.f-size-reg {
             font-size: 1.2rem;
         }
